@@ -1,0 +1,65 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	self.runSpeed = 50
+	self.curAnim = "idle"
+	msg.post("#sprite", "play_animation", {id = hash("idle")})
+	self.speed = vmath.vector3()
+	self.y = 40
+	self.yTrue = false
+	particlefx.play("#playerParticle")
+end
+
+function update(self, dt)
+	local pos = go.get_position()
+	if (self.speed.x == self.runSpeed or self.speed.x == -self.runSpeed) and self.curAnim ~= "run" then
+		msg.post("#sprite", "play_animation", {id = hash("run")})
+		self.curAnim = "run"
+	elseif (self.speed.y == self.runSpeed or self.speed.y == -self.runSpeed) and self.curAnim ~= "jump" then
+		if self.yTrue == true then
+			self.y = pos.y
+			self.yTrue = false
+		end
+		msg.post("#sprite", "play_animation", {id = hash("jump")})
+		self.curAnim = "jump"
+	elseif self.speed.x == 0 and self.speed.y == 0 and self.curAnim == "run" then
+		msg.post("#sprite", "play_animation", {id = hash("attack")})
+		self.curAnim = "attack"
+	end
+	if pos.y >= self.y + self.runSpeed and self.curAnim == "jump" then
+		self.speed.y = -self.runSpeed
+	end
+	if pos.y <= self.y and self.speed.y == -self.runSpeed then
+		self.speed.y = 0
+	end
+	pos = pos + self.speed * dt
+	go.set_position(pos)
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("goLeft") then
+		self.speed.x = -self.runSpeed
+		self.speed.y = 0
+		sprite.set_hflip("#sprite", true)
+	end
+
+	if action_id == hash("goRight") then
+		self.speed.x = self.runSpeed
+		self.speed.y = 0
+		sprite.set_hflip("#sprite", false)
+	end
+
+	if action_id == hash("Attack") then
+		self.speed.x = 0
+		self.speed.y = 0
+	end
+
+	if action_id == hash("Jump") then
+		self.speed.y = self.runSpeed
+	end
+
+	if action_id == hash("goDown") then
+		self.speed.y = -self.runSpeed
+	end
+
+	
+end			
