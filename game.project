@@ -3,7 +3,7 @@ title = Witcher
 dependencies = https://github.com/rgrams/rendercam/archive/v1.0.1.zip
 
 [bootstrap]
-main_collection = /main/level1.collectionc
+main_collection = /loader/loader.collectionc
 render = /rendercam/rendercam.renderc
 
 [input]
