@@ -1,0 +1,24 @@
+function init(self)
+	self.runspeed = 200
+	self.speed = vmath.vector3()
+	self.speed.x = 1
+	self.life = 1
+end
+
+function update(self, dt)
+	local pos = go.get_position()
+	pos = pos + self.speed * self.runspeed * dt
+	go.set_position(pos)
+
+	self.life = self.life - dt
+	if self.life < 0 then
+		go.delete()
+	end
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("collision_response") then
+		explode(self)
+		go.delete(message.other_id)
+	end
+end
