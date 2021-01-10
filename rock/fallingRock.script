@@ -1,0 +1,12 @@
+go.property("deleting", false)
+
+function init(self)
+
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("collision_response") and message.other_id == playerID then
+		msg.post("/gui#game", "take_live")
+		go.delete()
+	end	
+end

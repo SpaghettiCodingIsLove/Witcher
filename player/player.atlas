@@ -1,23 +1,23 @@
 animations {
   id: "idle"
   images {
-    image: "/assets/images/idle1.png"
+    image: "/assets/images/modelPostaci/idle1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/idle2.png"
+    image: "/assets/images/modelPostaci/idle2.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/idle3.png"
+    image: "/assets/images/modelPostaci/idle3.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/idle4.png"
+    image: "/assets/images/modelPostaci/idle4.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/idle5.png"
+    image: "/assets/images/modelPostaci/idle5.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD
@@ -28,31 +28,27 @@ animations {
 animations {
   id: "run"
   images {
-    image: "/assets/images/run1.png"
+    image: "/assets/images/modelPostaci/run1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/run2.png"
+    image: "/assets/images/modelPostaci/run2.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/run3.png"
+    image: "/assets/images/modelPostaci/run3.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/run4.png"
+    image: "/assets/images/modelPostaci/run4.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/run5.png"
+    image: "/assets/images/modelPostaci/run5.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/run6.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/images/run7.png"
+    image: "/assets/images/modelPostaci/run6.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD
@@ -63,23 +59,23 @@ animations {
 animations {
   id: "attack"
   images {
-    image: "/assets/images/attack1.png"
+    image: "/assets/images/modelPostaci/attack1.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/attack2.png"
+    image: "/assets/images/modelPostaci/attack2.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/attack3.png"
+    image: "/assets/images/modelPostaci/attack3.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/attack4.png"
+    image: "/assets/images/modelPostaci/attack4.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   images {
-    image: "/assets/images/attack5.png"
+    image: "/assets/images/modelPostaci/attack5.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD
@@ -90,15 +86,7 @@ animations {
 animations {
   id: "jump"
   images {
-    image: "/assets/images/jump.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/images/jump.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/images/jump.png"
+    image: "/assets/images/modelPostaci/jump.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
   playback: PLAYBACK_LOOP_FORWARD
