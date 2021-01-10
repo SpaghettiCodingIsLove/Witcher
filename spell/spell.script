@@ -1,4 +1,5 @@
 function init(self)
+	spellID = go.get_id()
 	self.runspeed = 200
 	self.speed = vmath.vector3()
 	self.speed.x = 1
@@ -17,8 +18,7 @@ function update(self, dt)
 end
 
 function on_message(self, message_id, message, sender)
-	if message_id == hash("collision_response") then
-		explode(self)
-		go.delete(message.other_id)
+	if message_id == hash("collision_response") and message.other_id == monsterID then
+		go.delete()
 	end
 end

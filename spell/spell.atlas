@@ -12,14 +12,6 @@ animations {
     image: "/assets/images/laser/laser3.png"
     sprite_trim_mode: SPRITE_TRIM_MODE_OFF
   }
-  images {
-    image: "/assets/images/laser/laser4.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
-  images {
-    image: "/assets/images/laser/laser5.png"
-    sprite_trim_mode: SPRITE_TRIM_MODE_OFF
-  }
   playback: PLAYBACK_LOOP_FORWARD
   fps: 6
   flip_horizontal: 0
