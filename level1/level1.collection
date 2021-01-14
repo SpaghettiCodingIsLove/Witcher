@@ -228,126 +228,6 @@ instances {
   }
 }
 instances {
-  id: "rock21"
-  prototype: "/rock/rock2.go"
-  position {
-    x: 1156.0
-    y: 309.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.027
-    y: 0.028
-    z: 1.0
-  }
-}
-instances {
-  id: "rock5"
-  prototype: "/rock/rock2.go"
-  position {
-    x: 1665.0
-    y: 309.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.027
-    y: 0.028
-    z: 1.0
-  }
-}
-instances {
-  id: "flyingMonster"
-  prototype: "/FlyingMonster/flyingMonster.go"
-  position {
-    x: 1332.0
-    y: 45.052
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.177
-    y: 0.133
-    z: 1.0
-  }
-}
-instances {
-  id: "rock6"
-  prototype: "/rock/rock2.go"
-  position {
-    x: 1904.0
-    y: 221.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.05
-    y: 0.05
-    z: 1.0
-  }
-}
-instances {
-  id: "rock7"
-  prototype: "/rock/rock2.go"
-  position {
-    x: 2046.0
-    y: 155.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.05
-    y: 0.05
-    z: 1.0
-  }
-}
-instances {
-  id: "rock8"
-  prototype: "/rock/rock2.go"
-  position {
-    x: 2157.0
-    y: 285.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.05
-    y: 0.05
-    z: 1.0
-  }
-}
-instances {
   id: "rock9"
   prototype: "/rock/rock1.go"
   position {
@@ -371,7 +251,7 @@ instances {
   id: "monster2"
   prototype: "/monster/monster.go"
   position {
-    x: 2538.0
+    x: 2003.0
     y: 47.0
     z: 0.0
   }
@@ -427,10 +307,49 @@ instances {
     z: 1.0
   }
 }
+instances {
+  id: "flyingMonster1"
+  prototype: "/FlyingMonster/flyingMonster.go"
+  position {
+    x: 2711.0
+    y: 72.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.2
+    y: 0.2
+    z: 1.0
+  }
+}
+instances {
+  id: "flyingMonster"
+  prototype: "/FlyingMonster/flyingMonster.go"
+  position {
+    x: 1649.0
+    y: 227.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.2
+    y: 0.2
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "background"
-  children: "flyingMonster"
   data: "embedded_components {\n"
   "  id: \"sprite\"\n"
   "  type: \"sprite\"\n"
@@ -718,7 +637,7 @@ embedded_instances {
   "type: COLLISION_OBJECT_TYPE_STATIC\\n"
   "mass: 0.0\\n"
   "friction: 0.1\\n"
-  "restitution: 0.5\\n"
+  "restitution: 0.3\\n"
   "group: \\\"floor\\\"\\n"
   "mask: \\\"player\\\"\\n"
   "mask: \\\"fallingRock\\\"\\n"
@@ -776,7 +695,7 @@ embedded_instances {
   "    shape_type: TYPE_BOX\\n"
   "    position {\\n"
   "      x: 1443.0\\n"
-  "      y: 381.0\\n"
+  "      y: 463.0\\n"
   "      z: 0.0\\n"
   "    }\\n"
   "    rotation {\\n"

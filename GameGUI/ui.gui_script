@@ -7,5 +7,8 @@ function on_message(self, message_id, message, sender)
 		self.lives = self.lives - 1
 		local scorenode = gui.get_node("playerLives")
 		gui.set_text(scorenode, "LIVES: " .. self.lives)
+		if self.lives == 0 then
+			msg.post("loader:/go#loader", "game_over")
+		end
 	end 
 end

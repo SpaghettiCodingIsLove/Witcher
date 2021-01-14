@@ -33,4 +33,9 @@ function on_message(self, message_id, message, sender)
 		unload_level1(self)
 		load_menu(self) -- Jak bedzie zrobiony level2 zamienic na load_level2(self)
 	end
+
+	if (message_id == hash("game_over") or message_id == hash("exit_game")) and CurrentLevel == 1 then
+		unload_level1(self)
+		load_menu(self)
+	end
 end
