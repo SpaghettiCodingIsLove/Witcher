@@ -15,12 +15,12 @@ key_trigger {
   action: "Attack"
 }
 key_trigger {
-  input: KEY_DOWN
-  action: "goDown"
-}
-key_trigger {
   input: KEY_Z
   action: "AttackSpell"
+}
+key_trigger {
+  input: KEY_ESC
+  action: "ExitGame"
 }
 mouse_trigger {
   input: MOUSE_BUTTON_1
