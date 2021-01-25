@@ -1,7 +1,28 @@
 name: "default"
+instances {
+  id: "camera"
+  prototype: "/orthographic/camera.go"
+  position {
+    x: -20.619
+    y: 216.981
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 1.014
+    y: 1.44
+    z: 1.0
+  }
+}
 scale_along_z: 0
 embedded_instances {
   id: "go"
+  children: "camera"
   data: "components {\n"
   "  id: \"player\"\n"
   "  component: \"/player/player.script\"\n"
@@ -75,8 +96,8 @@ embedded_instances {
   "  shapes {\\n"
   "    shape_type: TYPE_BOX\\n"
   "    position {\\n"
-  "      x: 34.309\\n"
-  "      y: 31.868\\n"
+  "      x: 54.928\\n"
+  "      y: 36.585\\n"
   "      z: 0.0\\n"
   "    }\\n"
   "    rotation {\\n"
@@ -89,7 +110,7 @@ embedded_instances {
   "    count: 3\\n"
   "  }\\n"
   "  data: 100.0\\n"
-  "  data: 160.0\\n"
+  "  data: 169.3965\\n"
   "  data: 10.0\\n"
   "}\\n"
   "linear_damping: 0.0\\n"

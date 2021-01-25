@@ -29,7 +29,9 @@ local anim_attack = hash("attack")
 function init(self)
 	-- this lets us handle input in this script
 	msg.post(".", "acquire_input_focus")
-
+	go.get_id("camera")
+	local camera = require "orthographic.camera"    
+	camera.bounds(go.get_id("camera"), 4, 340, 2880, 4)
 	-- initial player velocity
 	self.velocity = vmath.vector3(0, 0, 0)
 	-- support variable to keep track of collisions and separation
@@ -46,6 +48,7 @@ function init(self)
 	self.touch_jump_timer = 0
 	playerID = go.get_id()
 	activeAnimation = false
+	msg.post("camera", "follow", { target = playerID})
 end
 
 local function play_animation(self, anim)
@@ -114,9 +117,8 @@ function update(self, dt)
 	if self.touch_jump_timer > 0 then
 		self.touch_jump_timer = self.touch_jump_timer - dt
 	end
-
 	update_animations(self)
-
+	
 	-- reset volatile state
 	self.correction = vmath.vector3()
 	self.move_input = 0

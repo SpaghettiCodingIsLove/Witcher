@@ -32,7 +32,6 @@ function on_message(self, message_id, message, sender)
 	end	
 	if message_id == hash("collision_response") and message.other_id == playerID then
 		if activeAnimation == true then
-			msg.post("#sprite", "play_animation", {id = hash("die")})
 			go.delete()
 		else
 			msg.post("/gui#game", "take_live")
