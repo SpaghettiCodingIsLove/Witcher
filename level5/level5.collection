@@ -3,8 +3,8 @@ instances {
   id: "monster"
   prototype: "/monster/monster.go"
   position {
-    x: 590.0
-    y: 44.0
+    x: 788.0
+    y: 26.0
     z: 0.0
   }
   rotation {
@@ -23,8 +23,8 @@ instances {
   id: "monster2"
   prototype: "/monster/monster.go"
   position {
-    x: 1581.0
-    y: 38.0
+    x: 1630.0
+    y: 26.0
     z: 0.0
   }
   rotation {
@@ -63,8 +63,8 @@ instances {
   id: "flyingMonster1"
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
-    x: 1972.0
-    y: 172.0
+    x: 2110.0
+    y: 148.0
     z: 0.0
   }
   rotation {
@@ -83,8 +83,8 @@ instances {
   id: "flyingMonster"
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
-    x: 1261.0
-    y: 199.0
+    x: 1328.0
+    y: 146.0
     z: 0.0
   }
   rotation {
@@ -163,8 +163,8 @@ instances {
   id: "rock3"
   prototype: "/rock/rock8.go"
   position {
-    x: 369.0
-    y: 127.0
+    x: 397.0
+    y: 60.0
     z: 1.0
   }
   rotation {
@@ -183,8 +183,8 @@ instances {
   id: "rock10"
   prototype: "/rock/rock8.go"
   position {
-    x: 2256.0
-    y: 127.0
+    x: 2262.0
+    y: 59.0
     z: 1.0
   }
   rotation {
@@ -203,8 +203,8 @@ instances {
   id: "rock11"
   prototype: "/rock/rock9.go"
   position {
-    x: 1940.0
-    y: 120.0
+    x: 1936.0
+    y: 86.0
     z: 1.0
   }
   rotation {
@@ -223,8 +223,8 @@ instances {
   id: "rock4"
   prototype: "/rock/rock8.go"
   position {
-    x: 1195.0
-    y: 122.0
+    x: 1194.0
+    y: 49.0
     z: 1.0
   }
   rotation {
@@ -253,7 +253,7 @@ embedded_instances {
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
-  "    z: 0.0\n"
+  "    z: -1.0\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -273,7 +273,7 @@ embedded_instances {
   "  position {\n"
   "    x: 841.111\n"
   "    y: 1.667\n"
-  "    z: 0.0\n"
+  "    z: -1.0\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -293,7 +293,7 @@ embedded_instances {
   "  position {\n"
   "    x: 419.444\n"
   "    y: 1.667\n"
-  "    z: 0.0\n"
+  "    z: -1.0\n"
   "  }\n"
   "  rotation {\n"
   "    x: 0.0\n"
@@ -483,8 +483,8 @@ embedded_instances {
   "}\n"
   ""
   position {
-    x: 41.0
-    y: 73.0
+    x: 134.0
+    y: 140.0
     z: 0.0
   }
   rotation {
