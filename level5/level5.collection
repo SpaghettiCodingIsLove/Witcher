@@ -180,7 +180,7 @@ instances {
   }
 }
 instances {
-  id: "rock6"
+  id: "rock10"
   prototype: "/rock/rock6.go"
   position {
     x: 2273.0
@@ -200,7 +200,7 @@ instances {
   }
 }
 instances {
-  id: "rock7"
+  id: "rock11"
   prototype: "/rock/rock7.go"
   position {
     x: 1940.0
