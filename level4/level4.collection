@@ -43,8 +43,8 @@ instances {
   id: "mushroom1"
   prototype: "/mushroom/mushroom2.go"
   position {
-    x: 1105.0
-    y: 75.0
+    x: 1100.0
+    y: 52.0
     z: 1.0
   }
   rotation {
@@ -163,8 +163,8 @@ instances {
   id: "mushroom6"
   prototype: "/mushroom/mushroom3.go"
   position {
-    x: 2325.0
-    y: 95.0
+    x: 2333.0
+    y: 73.0
     z: 1.0
   }
   rotation {
@@ -243,8 +243,8 @@ instances {
   id: "mushroom5"
   prototype: "/mushroom/mushroom2.go"
   position {
-    x: 2114.0
-    y: 75.0
+    x: 2124.0
+    y: 49.0
     z: 1.0
   }
   rotation {
