@@ -1,4 +1,28 @@
+key_trigger {
+  input: KEY_SPACE
+  action: "Jump"
+}
+key_trigger {
+  input: KEY_LEFT
+  action: "goLeft"
+}
+key_trigger {
+  input: KEY_RIGHT
+  action: "goRight"
+}
+key_trigger {
+  input: KEY_LSHIFT
+  action: "Attack"
+}
+key_trigger {
+  input: KEY_Z
+  action: "AttackSpell"
+}
+key_trigger {
+  input: KEY_ESC
+  action: "ExitGame"
+}
 mouse_trigger {
-  input: MOUSE_BUTTON_LEFT
+  input: MOUSE_BUTTON_1
   action: "touch"
 }
