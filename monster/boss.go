@@ -1,3 +1,18 @@
+components {
+  id: "boss"
+  component: "/monster/boss.script"
+  position {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+}
 embedded_components {
   id: "collisionobject"
   type: "collisionobject"
@@ -12,13 +27,8 @@ embedded_components {
   "  shapes {\n"
   "    shape_type: TYPE_BOX\n"
   "    position {\n"
-<<<<<<< Updated upstream
-  "      x: -16.334\n"
-  "      y: -44.334\n"
-=======
-  "      x: -14.334\n"
-  "      y: -47.334\n"
->>>>>>> Stashed changes
+  "      x: 1.0\n"
+  "      y: -2.0\n"
   "      z: 0.0\n"
   "    }\n"
   "    rotation {\n"
@@ -30,29 +40,8 @@ embedded_components {
   "    index: 0\n"
   "    count: 3\n"
   "  }\n"
-<<<<<<< Updated upstream
-  "  data: 500.0\n"
-  "  data: 400.0\n"
-=======
-  "  shapes {\n"
-  "    shape_type: TYPE_BOX\n"
-  "    position {\n"
-  "      x: 62.0\n"
-  "      y: -71.0\n"
-  "      z: 0.0\n"
-  "    }\n"
-  "    rotation {\n"
-  "      x: 0.0\n"
-  "      y: 0.0\n"
-  "      z: 0.0\n"
-  "      w: 1.0\n"
-  "    }\n"
-  "    index: 3\n"
-  "    count: 3\n"
-  "  }\n"
-  "  data: 60.3635\n"
-  "  data: 45.0\n"
->>>>>>> Stashed changes
+  "  data: 100.0\n"
+  "  data: 90.0\n"
   "  data: 10.0\n"
   "}\n"
   "linear_damping: 0.0\n"
@@ -74,8 +63,8 @@ embedded_components {
 embedded_components {
   id: "sprite"
   type: "sprite"
-  data: "tile_set: \"/rock/rock.atlas\"\n"
-  "default_animation: \"spr_mossy_rock_160x160\"\n"
+  data: "tile_set: \"/monster/monster.atlas\"\n"
+  "default_animation: \"walk\"\n"
   "material: \"/builtins/materials/sprite.material\"\n"
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""

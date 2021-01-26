@@ -40,26 +40,6 @@ instances {
   }
 }
 instances {
-  id: "portal"
-  prototype: "/portal/portal.go"
-  position {
-    x: 2861.0
-    y: 52.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.121
-    y: 0.123
-    z: 1.0
-  }
-}
-instances {
   id: "flyingMonster1"
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
@@ -123,7 +103,7 @@ instances {
   id: "rock2"
   prototype: "/rock/rock2.go"
   position {
-    x: 2524.0
+    x: 2458.0
     y: 159.0
     z: 1.0
   }
@@ -237,6 +217,26 @@ instances {
     x: 1.5
     y: 1.5
     z: 0.15
+  }
+}
+instances {
+  id: "monster1"
+  prototype: "/monster/boss.go"
+  position {
+    x: 2813.0
+    y: 32.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
   }
 }
 scale_along_z: 0
@@ -642,7 +642,7 @@ embedded_instances {
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: 1728.666\n"
+  "    x: 1703.333\n"
   "    y: 91.0\n"
   "    z: 0.0\n"
   "  }\n"
