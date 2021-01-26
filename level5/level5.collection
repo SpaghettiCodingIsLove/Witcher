@@ -23,8 +23,8 @@ instances {
   id: "monster2"
   prototype: "/monster/monster.go"
   position {
-    x: 1630.0
-    y: 26.0
+    x: 1478.0
+    y: 32.0
     z: 0.0
   }
   rotation {
@@ -40,31 +40,11 @@ instances {
   }
 }
 instances {
-  id: "portal"
-  prototype: "/portal/portal.go"
-  position {
-    x: 2861.0
-    y: 52.0
-    z: 0.0
-  }
-  rotation {
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 1.0
-  }
-  scale3 {
-    x: 0.121
-    y: 0.123
-    z: 1.0
-  }
-}
-instances {
   id: "flyingMonster1"
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
-    x: 2110.0
-    y: 148.0
+    x: 2162.0
+    y: 61.0
     z: 0.0
   }
   rotation {
@@ -83,8 +63,8 @@ instances {
   id: "flyingMonster"
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
-    x: 1328.0
-    y: 146.0
+    x: 1221.0
+    y: 139.0
     z: 0.0
   }
   rotation {
@@ -123,7 +103,7 @@ instances {
   id: "rock2"
   prototype: "/rock/rock2.go"
   position {
-    x: 2524.0
+    x: 2463.0
     y: 159.0
     z: 1.0
   }
@@ -163,8 +143,8 @@ instances {
   id: "rock3"
   prototype: "/rock/rock8.go"
   position {
-    x: 397.0
-    y: 60.0
+    x: 400.0
+    y: 77.0
     z: 1.0
   }
   rotation {
@@ -174,8 +154,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 1.5
-    y: 1.5
+    x: 1.0
+    y: 1.0
     z: 0.15
   }
 }
@@ -183,8 +163,8 @@ instances {
   id: "rock10"
   prototype: "/rock/rock8.go"
   position {
-    x: 2262.0
-    y: 59.0
+    x: 2299.0
+    y: 89.0
     z: 1.0
   }
   rotation {
@@ -194,8 +174,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 1.5
-    y: 1.5
+    x: 1.0
+    y: 1.0
     z: 0.15
   }
 }
@@ -203,8 +183,8 @@ instances {
   id: "rock11"
   prototype: "/rock/rock9.go"
   position {
-    x: 1936.0
-    y: 86.0
+    x: 1187.0
+    y: 93.0
     z: 1.0
   }
   rotation {
@@ -215,7 +195,7 @@ instances {
   }
   scale3 {
     x: 1.5
-    y: 1.5
+    y: 1.0
     z: 0.18
   }
 }
@@ -223,8 +203,8 @@ instances {
   id: "rock4"
   prototype: "/rock/rock8.go"
   position {
-    x: 1194.0
-    y: 49.0
+    x: 1891.0
+    y: 80.0
     z: 1.0
   }
   rotation {
@@ -234,9 +214,29 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 1.5
-    y: 1.5
+    x: 1.0
+    y: 1.0
     z: 0.15
+  }
+}
+instances {
+  id: "monster1"
+  prototype: "/monster/boss.go"
+  position {
+    x: 2839.0
+    y: 56.0
+    z: 0.0
+  }
+  rotation {
+    x: 0.0
+    y: 0.0
+    z: 0.0
+    w: 1.0
+  }
+  scale3 {
+    x: 0.5
+    y: 0.5
+    z: 1.0
   }
 }
 scale_along_z: 0
@@ -642,8 +642,8 @@ embedded_instances {
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: 1728.666\n"
-  "    y: 91.0\n"
+  "    x: 1675.333\n"
+  "    y: 89.0\n"
   "    z: 0.0\n"
   "  }\n"
   "  rotation {\n"
