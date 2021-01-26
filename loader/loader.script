@@ -1,0 +1,41 @@
+CurrentLevel = 0
+
+local function load_menu(self)
+	msg.post("/go#mainMenu", "load")
+	msg.post("/go#mainMenu", "enable")
+end
+
+local function unload_menu(self)
+	msg.post("/go#mainMenu", "unload")
+end
+
+local function unload_level1(self)
+	msg.post("/go#level1", "unload")
+end
+
+local function load_level1(self)
+	msg.post("/go#level1", "load")
+	msg.post("/go#level1", "enable")
+end
+
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	load_menu(self)
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("start_game") then
+		unload_menu(self)
+		load_level1(self)
+	end
+
+	if message_id == hash("change_level") and CurrentLevel == 1 then
+		unload_level1(self)
+		load_menu(self) -- Jak bedzie zrobiony level2 zamienic na load_level2(self)
+	end
+
+	if (message_id == hash("game_over") or message_id == hash("exit_game")) and CurrentLevel == 1 then
+		unload_level1(self)
+		load_menu(self)
+	end
+end

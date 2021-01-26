@@ -1,0 +1,9 @@
+function init(self)
+	portalID = go.get_id()
+end
+
+function on_message(self, message_id, message)
+	if message_id == hash("collision_response") and message.other_id == playerID then
+		msg.post("loader:/go#loader", "change_level")
+	end
+end
