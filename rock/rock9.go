@@ -31,7 +31,7 @@ embedded_components {
   "    shape_type: TYPE_BOX\n"
   "    position {\n"
   "      x: 62.0\n"
-  "      y: -71.0\n"
+  "      y: -42.0\n"
   "      z: 0.0\n"
   "    }\n"
   "    rotation {\n"
@@ -44,7 +44,7 @@ embedded_components {
   "    count: 3\n"
   "  }\n"
   "  data: 60.3635\n"
-  "  data: 54.3295\n"
+  "  data: 75.83\n"
   "  data: 10.0\n"
   "  data: 20.0\n"
   "  data: 20.0\n"
@@ -75,8 +75,8 @@ embedded_components {
   "blend_mode: BLEND_MODE_ALPHA\n"
   ""
   position {
-    x: 2.0
-    y: -9.0
+    x: 3.0
+    y: 19.0
     z: 0.0
   }
   rotation {
