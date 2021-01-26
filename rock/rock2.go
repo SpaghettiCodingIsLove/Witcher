@@ -45,6 +45,7 @@ embedded_components {
   "mask: \"floor\"\n"
   "mask: \"player\"\n"
   "mask: \"iceRock\"\n"
+  "mask: \"rockObstacle\"\n"
   "embedded_collision_shape {\n"
   "  shapes {\n"
   "    shape_type: TYPE_BOX\n"
