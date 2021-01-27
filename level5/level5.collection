@@ -3,8 +3,8 @@ instances {
   id: "monster"
   prototype: "/monster/monster.go"
   position {
-    x: 788.0
-    y: 26.0
+    x: 790.0
+    y: 35.0
     z: 0.0
   }
   rotation {
@@ -23,8 +23,8 @@ instances {
   id: "monster2"
   prototype: "/monster/monster.go"
   position {
-    x: 1630.0
-    y: 26.0
+    x: 1634.0
+    y: 39.0
     z: 0.0
   }
   rotation {
@@ -271,7 +271,7 @@ embedded_instances {
   "blend_mode: BLEND_MODE_ALPHA\\n"
   "\"\n"
   "  position {\n"
-  "    x: 841.111\n"
+  "    x: 836.042\n"
   "    y: 1.667\n"
   "    z: -1.0\n"
   "  }\n"
