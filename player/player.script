@@ -29,7 +29,7 @@ local anim_attack = hash("attack")
 function init(self)
 	-- this lets us handle input in this script
 	msg.post(".", "acquire_input_focus")
-	go.get_id("camera")
+	--go.get_id("camera")
 	local camera = require "orthographic.camera"    
 	camera.bounds(go.get_id("camera"), 4, 340, 2880, 25)
 	-- initial player velocity

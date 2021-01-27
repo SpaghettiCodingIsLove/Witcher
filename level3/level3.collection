@@ -1,4 +1,4 @@
-name: "level1"
+name: "level3"
 instances {
   id: "monster"
   prototype: "/monster/monster.go"
@@ -529,8 +529,8 @@ embedded_instances {
 embedded_instances {
   id: "player"
   data: "components {\n"
-  "  id: \"level1\"\n"
-  "  component: \"/level1/level1.script\"\n"
+  "  id: \"level3\"\n"
+  "  component: \"/level3/level3.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"
