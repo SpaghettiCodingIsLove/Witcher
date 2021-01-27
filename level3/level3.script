@@ -1,0 +1,4 @@
+function init(self)
+	collectionfactory.create("#collectionfactory")
+	CurrentLevel = 3
+end

@@ -37,6 +37,7 @@ function on_message(self, message_id, message, sender)
 			go.delete()
 		else
 			msg.post("/gui#game", "take_live")
+			go.delete()
 		end	
 	end
 end

@@ -1,4 +1,4 @@
-name: "level1"
+name: "level3"
 instances {
   id: "monster"
   prototype: "/monster/monster.go"
@@ -23,7 +23,7 @@ instances {
   id: "monster1"
   prototype: "/monster/monster.go"
   position {
-    x: 2710.0
+    x: 2659.0
     y: 42.0
     z: 0.0
   }
@@ -83,7 +83,7 @@ instances {
   id: "flyingMonster1"
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
-    x: 1749.0
+    x: 1801.0
     y: 57.0
     z: 0.0
   }
@@ -103,7 +103,7 @@ instances {
   id: "flyingMonster"
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
-    x: 1211.0
+    x: 1299.0
     y: 196.0
     z: 0.0
   }
@@ -529,8 +529,8 @@ embedded_instances {
 embedded_instances {
   id: "player"
   data: "components {\n"
-  "  id: \"level1\"\n"
-  "  component: \"/level1/level1.script\"\n"
+  "  id: \"level3\"\n"
+  "  component: \"/level3/level3.script\"\n"
   "  position {\n"
   "    x: 0.0\n"
   "    y: 0.0\n"

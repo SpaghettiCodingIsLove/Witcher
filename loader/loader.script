@@ -18,12 +18,73 @@ local function load_level1(self)
 	msg.post("/go#level1", "enable")
 end
 
+local function unload_level2(self)
+	msg.post("/go#level2", "unload")
+end
+
+local function load_level2(self)
+	msg.post("/go#level2", "load")
+	msg.post("/go#level2", "enable")
+end
+
+local function unload_level3(self)
+	msg.post("/go#level3", "unload")
+end
+
+local function load_level3(self)
+	msg.post("/go#level3", "load")
+	msg.post("/go#level3", "enable")
+end
+
+local function unload_level4(self)
+	msg.post("/go#level4", "unload")
+end
+
+local function load_level4(self)
+	msg.post("/go#level4", "load")
+	msg.post("/go#level4", "enable")
+end
+
+local function unload_level5(self)
+	msg.post("/go#level5", "unload")
+end
+
+local function load_level5(self)
+	msg.post("/go#level5", "load")
+	msg.post("/go#level5", "enable")
+end
+
 function init(self)
 	msg.post(".", "acquire_input_focus")
 	load_menu(self)
 end
 
 function on_message(self, message_id, message, sender)
+	if message_id == hash("load_level1") then
+		unload_menu(self)
+		load_level1(self)
+	end
+
+	if message_id == hash("load_level2") then
+		unload_menu(self)
+		load_level2(self)
+	end
+
+	if message_id == hash("load_level3") then
+		unload_menu(self)
+		load_level3(self)
+	end
+
+	if message_id == hash("load_level4") then
+		unload_menu(self)
+		load_level4(self)
+	end
+
+	if message_id == hash("load_level5") then
+		unload_menu(self)
+		load_level5(self)
+	end
+	
 	if message_id == hash("start_game") then
 		unload_menu(self)
 		load_level1(self)
@@ -31,11 +92,51 @@ function on_message(self, message_id, message, sender)
 
 	if message_id == hash("change_level") and CurrentLevel == 1 then
 		unload_level1(self)
-		load_menu(self) -- Jak bedzie zrobiony level2 zamienic na load_level2(self)
+		load_menu(self)
+	end
+
+	if message_id == hash("change_level") and CurrentLevel == 2 then
+		unload_level2(self)
+		load_menu(self)
+	end
+
+	if message_id == hash("change_level") and CurrentLevel == 3 then
+		unload_level3(self)
+		load_menu(self)
+	end
+
+	if message_id == hash("change_level") and CurrentLevel == 4 then
+		unload_level4(self)
+		load_menu(self)
+	end
+
+	if message_id == hash("change_level") and CurrentLevel == 5 then
+		unload_level5(self)
+		load_menu(self)
 	end
 
 	if (message_id == hash("game_over") or message_id == hash("exit_game")) and CurrentLevel == 1 then
 		unload_level1(self)
+		load_menu(self)
+	end
+
+	if (message_id == hash("game_over") or message_id == hash("exit_game")) and CurrentLevel == 2 then
+		unload_level2(self)
+		load_menu(self)
+	end
+
+	if (message_id == hash("game_over") or message_id == hash("exit_game")) and CurrentLevel == 3 then
+		unload_level3(self)
+		load_menu(self)
+	end
+
+	if (message_id == hash("game_over") or message_id == hash("exit_game")) and CurrentLevel == 4 then
+		unload_level4(self)
+		load_menu(self)
+	end
+
+	if (message_id == hash("game_over") or message_id == hash("exit_game")) and CurrentLevel == 5 then
+		unload_level5(self)
 		load_menu(self)
 	end
 end
