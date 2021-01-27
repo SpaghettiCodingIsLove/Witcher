@@ -103,7 +103,7 @@ instances {
   id: "flyingMonster"
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
-    x: 1303.0
+    x: 1501.0
     y: 146.0
     z: 0.0
   }

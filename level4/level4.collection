@@ -3,8 +3,8 @@ instances {
   id: "flyingMonster"
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
-    x: 1456.0
-    y: 226.0
+    x: 1323.0
+    y: 151.0
     z: 0.0
   }
   rotation {
@@ -183,7 +183,7 @@ instances {
   id: "flyingMonster1"
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
-    x: 1834.0
+    x: 2087.0
     y: 78.0
     z: 0.0
   }
@@ -223,7 +223,7 @@ instances {
   id: "monster2"
   prototype: "/monster/monster.go"
   position {
-    x: 2759.0
+    x: 2711.0
     y: 41.0
     z: 0.0
   }
@@ -264,7 +264,7 @@ instances {
   prototype: "/FlyingMonster/flyingMonster.go"
   position {
     x: 2511.0
-    y: 226.0
+    y: 162.0
     z: 0.0
   }
   rotation {

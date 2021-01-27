@@ -60,6 +60,31 @@ function init(self)
 end
 
 function on_message(self, message_id, message, sender)
+	if message_id == hash("load_level1") then
+		unload_menu(self)
+		load_level1(self)
+	end
+
+	if message_id == hash("load_level2") then
+		unload_menu(self)
+		load_level2(self)
+	end
+
+	if message_id == hash("load_level3") then
+		unload_menu(self)
+		load_level3(self)
+	end
+
+	if message_id == hash("load_level4") then
+		unload_menu(self)
+		load_level4(self)
+	end
+
+	if message_id == hash("load_level5") then
+		unload_menu(self)
+		load_level5(self)
+	end
+	
 	if message_id == hash("start_game") then
 		unload_menu(self)
 		load_level1(self)
@@ -67,22 +92,22 @@ function on_message(self, message_id, message, sender)
 
 	if message_id == hash("change_level") and CurrentLevel == 1 then
 		unload_level1(self)
-		load_level2(self) 
+		load_menu(self)
 	end
 
 	if message_id == hash("change_level") and CurrentLevel == 2 then
 		unload_level2(self)
-		load_level3(self) 
+		load_menu(self)
 	end
 
 	if message_id == hash("change_level") and CurrentLevel == 3 then
 		unload_level3(self)
-		load_level4(self)
+		load_menu(self)
 	end
 
 	if message_id == hash("change_level") and CurrentLevel == 4 then
 		unload_level4(self)
-		load_level5(self)
+		load_menu(self)
 	end
 
 	if message_id == hash("change_level") and CurrentLevel == 5 then
