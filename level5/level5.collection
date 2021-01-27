@@ -220,11 +220,11 @@ instances {
   }
 }
 instances {
-  id: "boss"
-  prototype: "/monster/boss.go"
+  id: "portal"
+  prototype: "/portal/portal.go"
   position {
-    x: 2763.0
-    y: 87.0
+    x: 2854.0
+    y: 69.0
     z: 0.0
   }
   rotation {
@@ -234,8 +234,8 @@ instances {
     w: 1.0
   }
   scale3 {
-    x: 0.3
-    y: 0.23
+    x: 0.121
+    y: 0.123
     z: 1.0
   }
 }
