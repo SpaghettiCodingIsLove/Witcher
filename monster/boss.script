@@ -1,0 +1,44 @@
+function init(self)
+	monsterID = go.get_id()
+	self.runSpeed = 50
+	self.dir = vmath.vector3()
+	self.dir.x = -self.runSpeed
+	self.position = go.get_position()
+	self.lives = 3
+end
+
+function update(self, dt)
+	local pos = go.get_position()
+	if self.position.x + 150 < pos.x then
+		self.dir.x = -self.runSpeed
+		--sprite.set_hflip("#sprite", false)
+	end
+
+	if self.position.x - 150 > pos.x then
+		self.dir.x = self.runSpeed
+		--sprite.set_hflip("#sprite", true)
+	end
+
+	pos = pos + self.dir * dt
+	go.set_position(pos)
+end
+
+function on_message(self, message_id, message, sender)
+	if message_id == hash("collision_response") and message.other_id == spellID then
+		self.lives = self.lives - 1
+		if self.lives == 0 then
+			--msg.post("#sprite", "play_animation", {id = hash("die")})
+			go.delete()
+		end
+	end	
+	if message_id == hash("collision_response") and message.other_id == playerID then
+		if activeAnimation == true then
+			self.lives = self.lives - 1
+			if self.lives == 0 then
+				--msg.post("#sprite", "play_animation", {id = hash("die")})
+				go.delete()
+		else
+			msg.post("/gui#game", "take_live")
+		end	
+	end
+end
